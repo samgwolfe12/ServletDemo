@@ -36,12 +36,19 @@ public class MyServletDemo extends HttpServlet {
     	                  + request.getParameter("uname") + "\n" +
     	                  "  <li><b>Password</b>: "
     	                  + request.getParameter("psw") + "\n" +
+    	                  "	<li><b>Remember?</b>: "
+    	                  + request.getParameter("remember") +
     	               "</ul>\n" +
     	            "</body>" +
     	         "</html>"
     	      );
       
    }
+   public void doPost(HttpServletRequest request, HttpServletResponse response)
+		      throws ServletException, IOException {
+
+		      doGet(request, response);
+		   }
 
    public void destroy() {
       /* leaving empty for now this can be
