@@ -32,10 +32,10 @@ public class MyServletDemo extends HttpServlet {
     	            "<body bgcolor = \"#f0f0f0\">\n" +
     	               "<h1 align = \"center\">" + title + "</h1>\n" +
     	               "<ul>\n" +
-    	                  "  <li><b>First Name</b>: "
-    	                  + request.getParameter("first_name") + "\n" +
-    	                  "  <li><b>Last Name</b>: "
-    	                  + request.getParameter("last_name") + "\n" +
+    	                  "  <li><b>Email</b>: "
+    	                  + request.getParameter("uname") + "\n" +
+    	                  "  <li><b>Password</b>: "
+    	                  + request.getParameter("psw") + "\n" +
     	               "</ul>\n" +
     	            "</body>" +
     	         "</html>"

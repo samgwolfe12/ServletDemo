@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html>
    <body>
@@ -9,3 +10,55 @@
       </form>
    </body>
 </html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Login</title>
+    <link rel="stylesheet" type="text/css" href="resources\style3.css">
+  </head>
+
+  <body>
+	<h2>Login Form</h2>
+	<button onclick="document.getElementById('popUp').style.display='block'" style="width:auto;">Login!</button>
+	<div id="popUp" class="modal">
+	  	<!-- <form class="modal-content animate" action="action_page.php" method="get">-->
+	  	<form action = "MyServletDemo" method = "GET">
+		    <div class="imgcontainer">
+		      <span onclick="document.getElementById('popUp').style.display='none'" class="close" title="Close">&times;</span>
+		      <img src="resources\paris.png" alt="Logo" class="logo">
+		      <h3>Please Login</h3>
+		    </div>
+		    <div class="container">
+		      <!--<label for="uname"><b>Username</b></label>-->
+		      Email: <input type="text" placeholder="email" name="uname" required>
+		      <!-- <label for="psw"><b>Password</b></label> -->
+		      Password: <input type="password" placeholder="password" name="psw" required>
+		      <button type="submit">Login</button>
+		      <label>
+		        <input type="checkbox" checked="checked" name="remember"> Remember me
+		      </label>
+		      <h4 class="account">New to the site? Make <a href="account.html">new account</a></h4>
+		      <!--<span class="account">Make <a href="#">new account</a></span>-->
+		    </div>
+
+		    <div class="container" style="background-color:#f1f1f1">
+		      <button type="button" onclick="document.getElementById('popUp').style.display='none'" class="cancelbtn">Cancel</button>
+		      <span class="psw">Forgot <a href="#">password?</a></span>
+		    </div>
+	  	</form>
+	</div>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('popUp');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	</script>
+  </body>
+ </html>

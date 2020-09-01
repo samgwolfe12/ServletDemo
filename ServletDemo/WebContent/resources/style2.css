@@ -1,0 +1,47 @@
+body {
+  font-family: HelveticaNeueW01-55Roma,helvetica,arial,sans-serif;
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    height: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+}
+
+form{
+    width: 255px;
+    margin: auto;
+    /*float: right;*/
+}
+
+h2 {
+    font-family: sofia-pro;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+button {
+  background-color: black;   /*blue */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
